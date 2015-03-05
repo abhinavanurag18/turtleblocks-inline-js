@@ -74,7 +74,7 @@ function PlanetModel(controller) {
 
         var image = todo.pop();
         if (image === undefined) {
-            return;
+            return 0;
         }
         var name = image.replace('.b64', '');
 
@@ -84,6 +84,7 @@ function PlanetModel(controller) {
             me.updated();
             me.getImages(todo);
         } else {
+
             jQuery.ajax({
   	            url: server + image,
                 headers: {

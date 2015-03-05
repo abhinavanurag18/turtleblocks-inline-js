@@ -381,6 +381,7 @@ function Turtle (name, turtles) {
         this.media.push(text);
         text.x = this.container.x;
         text.y = this.container.y;
+        this.svgOutput += '<text x="'+ this.container.x +'" y = "'+ this.container.y +'" fill="red" font = "Courier" font-size = "'+size+'">'+myText+'</text>';
         text.rotation = this.orientation;
         this.turtles.refreshCanvas();
     }

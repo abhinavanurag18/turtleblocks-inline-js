@@ -938,7 +938,7 @@ function Logo(canvas, blocks, turtles, stage, refreshCanvas, textMsg, errorMsg,h
                 break;
             case 'savesvg':
                 if (args.length == 1) {
-                    doSaveSVG(logo, args[0])
+                    doSaveSVG(logo, args[0]);
                 }
                 break;
             default:
